@@ -1,13 +1,3 @@
-/* CSS MAIN FILE */
-
-.body	{font-size: 1.20vw; color: white; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
-
-.itemname {font-size: 1vw; color: lightgray; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
-
-.componentlistpage {font-size: 2.5vw; color: lightgray; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
-
-.code {font-size: 1.35vw; color: black; font-family: "Courier New", Courier, monospace; line-height: 125%; overflow-x: hidden;}
-
 /* CSS CHECKBOX FILE */
 
 /* Definição do contentor da checkbox */
@@ -132,6 +122,4 @@
         </label>
         
         <p class="disabled" style="margin-left:7%; margin-top:-3%;">Inativo Marcado </p>
-        
-        <div class="codetext"><p class="code"></p>
 </body>
