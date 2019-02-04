@@ -1,0 +1,42 @@
+<body>
+    
+        <input onclick="LastPage()" type="image" src="back.png" style="height:11%; width:6%; margin-top:2%; margin-left:2%; position: fixed;" />
+        
+        <br><br><br><br><br><br>
+        
+        <label class="container" style="margin-left: 1vw">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        
+        <p class="enabled" style="margin-left:7%; margin-top:-3%;">Padrão</p>
+        
+        <br><br>
+        
+        <label class="container" style="margin-left: 1vw"> 
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        
+        <p class="enabled" style="margin-left:7%; margin-top:-3%;">Marcado</p>
+        
+        <br><br>
+        
+        <label class="container" style="margin-left: 1vw">
+            <input type="checkbox" disabled>
+            <span class="checkmark"></span>
+        </label>
+        
+        <p class="disabled" style="margin-left:7%; margin-top:-3%;">Inativo Padrão </p>
+        
+        <br><br>
+        
+        <label class="container" style="margin-left: 1vw">
+            <input type="checkbox" checked="checked" disabled>
+            <span class="checkmark"></span>
+        </label>
+        
+        <p class="disabled" style="margin-left:7%; margin-top:-3%;">Inativo Marcado </p>
+        
+        <div class="codetext"><p class="code"></p>
+</body>
