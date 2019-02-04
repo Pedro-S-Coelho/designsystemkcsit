@@ -1,3 +1,98 @@
+/* CSS MAIN FILE */
+
+.body	{font-size: 1.20vw; color: white; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
+
+.itemname {font-size: 1vw; color: lightgray; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
+
+.componentlistpage {font-size: 2.5vw; color: lightgray; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
+
+.code {font-size: 1.35vw; color: black; font-family: "Courier New", Courier, monospace; line-height: 125%; overflow-x: hidden;}
+
+/* CSS CHECKBOX FILE */
+
+/* Definição do contentor da checkbox */
+.container {
+  display: block;
+  position: relative;
+  height: 4.5%;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Esconde a checkbox padrão do html */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 175%;
+  width: 4.25%;
+  background-color: #eee;
+  border: 0.25vw solid #4d0064;
+  border-style: ridge;
+}
+
+/* Quando é feito hover na checkbox adicionar fundo violeta */
+.container:hover input ~ .checkmark {
+  background-color: #d966ff;
+}
+
+/* Quando a checkbox é selecionada adicionar fundo roxo */
+.container input:checked ~ .checkmark {
+  background-color: #ad00d6;
+}
+
+/* Marcador (Escondido quando não selecionado) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar Marcador */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Aparência do Marcador */
+.container .checkmark:after {
+  left: 30%;
+  top: 10%;
+  width: 30%;
+  height: 60%;
+  border: solid white;
+  border-width: 0 0.35vw 0.35vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Quando o botão está inativo mudar a cor do fundo e bordas para cinzento */
+.container input:disabled ~ .checkmark {
+  background-color: #dcdcdc;
+  border-color: #8d8d8d;
+}
+
+.disabled	{font-size: 1.70vw; color: #dcdcdc; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
+
+.enabled	{font-size: 1.70vw; color: white; font-family: "Trebuchet MS", Helvetica, sans-serif; line-height: 200%; overflow-x: hidden;}
+
+/* HTML MAIN FILE */
+
 <body>
     
         <input onclick="LastPage()" type="image" src="back.png" style="height:11%; width:6%; margin-top:2%; margin-left:2%; position: fixed;" />
